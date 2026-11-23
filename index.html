@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Velora | Fashion in Full Bloom</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Velora</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#collection">Collection</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Signup</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Velora</h1>
+        <p>Fashion in Full Bloom</p>
+        <button onclick="document.getElementById('collection').scrollIntoView({ behavior: 'smooth' });">Shop Now</button>
+    </div>
+</section>
+
+<!-- COLLECTION -->
+<section class="collection" id="collection">
+    <h2>Shop By Category</h2>
+    <div class="categories">
+
+        <!-- Dresses -->
+        <div class="category-card">
+            <a href="dresses.html">
+                <img src="https://i.pinimg.com/736x/6d/0e/ef/6d0eefa8ee0e1945f461880885d61640.jpg" alt="Dresses">
+                <h3>Dresses</h3>
+                <p>Soft silhouettes & elegant fits</p>
+                <button class="view-btn">View Dresses</button>
+            </a>
+        </div>
+
+        <!-- Jewelry -->
+        <div class="category-card">
+            <a href="jewelry.html">
+                <img src="https://i.pinimg.com/736x/5e/06/f2/5e06f26e64fdbe369f345ccbd6825c15.jpg" alt="Jewelry">
+                <h3>Jewellery</h3>
+                <p>Delicate pieces for everyday glam</p>
+                <button class="view-btn">View Jewelry</button>
+            </a>
+        </div>
+
+        <!-- Bags -->
+        <div class="category-card">
+            <a href="bags.html">
+                <img src="https://us.weat-studio.com/cdn/shop/files/Artboard1_669223a7-ff4d-46d5-a4e5-e2221f628f66_800x.jpg?v=1737639241" alt="Bags">
+                <h3>Bags</h3>
+                <p>Minimal • Chic • Stylish</p>
+                <button class="view-btn">View Bags</button>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2>About Velora</h2>
+    <p>
+        Velora is a modern women’s fashion brand designed for elegance, comfort,
+        and confidence. Every piece is curated to bring out your soft glam side
+        with a touch of luxury and trend.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <button onclick="contact()">Call Us</button>
+    <button onclick="email()">Email Us</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 Velora | Designed for Women</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
